@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shaw's Conservatory</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="/img/logo.png" alt="headphones-logo"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="fas fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="/course.html">COURSE</a></li>
+                    <li><a href="/blog.html">BLOG</a></li>
+                    <li><a href="/contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
+        </nav>
+    <h1>About Us</h1>
+    </section>
+
+    <!-- about us content -->
+    <section class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are rated top music school of 2021</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam placeat sint, libero commodi quas veritatis quos porro ipsam odit eveniet iste veniam, quis incidunt, qui nulla numquam aperiam. Illo sunt quas laboriosam quidem commodi consequatur fuga dicta excepturi? Molestiae quas exercitationem deserunt omnis quia voluptatem vel voluptates modi enim, voluptatum sequi eligendi commodi eos, culpa est! Qui laboriosam sit sapiente beatae consequatur quasi nostrum dolore amet tempora, fugiat ipsam asperiores dolorem nemo suscipit veritatis natus!</p>
+                <a href="" class="hero-btn red-btn">LEARN MORE</a>
+            </div>
+            <div class="about-col">
+                <img src="/img/aboutus2.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam, rerum veniam. Cupiditate eos reiciendis a optio
+            excepturi provident<br> similique! Expedita, perferendis eligendi dignissimos quaerat ullam praesentium
+            exercitationem eum accusamus architecto fuga.</p>
+    
+        <div class="icons">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+    </section>
+    
+    <!-- JS for toggle menu -->
+    <script>
+
+        var navLinks = document.getElementById("nav-links");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
